@@ -12,4 +12,12 @@ console.log(surName, typeof surName);
 const prefClr = prompt("Inserisci il tuo colore preferito"); // string
 console.log(prefClr, typeof prefClr)
 
+// numero casuale da 1 a 100
+let casualNumber = Math.floor((Math.random() * 100) + 1)
+
 // unione variabili 
+let psw = `${userName}${surName}${prefClr}${casualNumber}`;
+console.log(psw); // string
+
+
+document.getElementById("generatedpsw").innerHTML=psw;
