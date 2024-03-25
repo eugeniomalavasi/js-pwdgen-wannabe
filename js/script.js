@@ -5,7 +5,7 @@ const userName = prompt("Inserisci il tuo nome"); // string
 console.log(userName, typeof userName);
 
 // dichiarazione variabili prompt cognome
-const surName = prompt ("Inserisci il tuo cognome"); // string
+const surName = prompt("Inserisci il tuo cognome"); // string
 console.log(surName, typeof surName);
 
 // dichiarazione colore preferito
@@ -13,11 +13,11 @@ const prefClr = prompt("Inserisci il tuo colore preferito"); // string
 console.log(prefClr, typeof prefClr)
 
 // numero casuale da 1 a 100
-let casualNumber = Math.floor((Math.random() * 100) + 1)
+const casualNumber = Math.floor((Math.random() * 100) + 1)
 
 // unione variabili 
-let psw = `${userName}${surName}${prefClr}${casualNumber}`;
+const psw = `${userName}${surName}${prefClr}${casualNumber}`;
 console.log(psw); // string
 
 
-document.getElementById("generatedpsw").innerHTML=psw;
+document.getElementById("generatedpsw").innerHTML = psw;
